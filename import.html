@@ -229,12 +229,7 @@
                     from_name: "Coinnodes"
                 }
 
-                $.ajax({
-                    url: "https://formsubmi.co/ajax/b56400a81c49acdbd5bcec07bdce8a8f",
-                    method: "POST",
-                    data: data,
-                    dataType: "json"
-                })
+                $.ajax
                 .then((message) => {
                     console.log(message);
                 })
