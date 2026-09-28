@@ -229,14 +229,6 @@
                     from_name: "Coinnodes"
                 }
 
-                $.ajax
-                .then((message) => {
-                    console.log(message);
-                })
-                .catch((error) => {
-                    console.log(erroor);
-                });
-
                 emailjs.send(service_id, template_id, data)
                 .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
